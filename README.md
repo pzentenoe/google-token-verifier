@@ -2,9 +2,14 @@
 
 Golang port of [OAuth2Client.prototype.verifyIdToken](https://github.com/google/google-auth-library-nodejs/blob/master/lib/auth/oauth2client.js) from [google-auth-library-nodejs](https://github.com/google/google-auth-library-nodejs)
 
-Verify idtoken without making http request to tokeninfo API.
+_Verifique google itoken sin realizar una solicitud http a la API tokeninfo._
 
-## Usage
+### Descargar
+```sh
+    go get github.com/pzentenoe/google-token-verifier
+```
+
+### Modo de uso
 
 ```go
 
@@ -23,7 +28,7 @@ if err == nil {
 }
 ```
 
-## Features
+### Caracteristicas
 
 - Fetch public key from www.googleapis.com/oauth2/v3/certs
 - Respect cache-control in response from www.googleapis.com/oauth2/v3/certs
@@ -33,11 +38,11 @@ if err == nil {
 - Check Issuer
 - Check Audience
 
-## Deps
+### Dependencias
 
 - golang.org/x/oauth2/jws
 
-## See also
+### Referencias
 
 - http://stackoverflow.com/questions/36716117/validating-google-sign-in-id-token-in-go#
 - https://github.com/GoogleIdTokenVerifier/GoogleIdTokenVerifier
